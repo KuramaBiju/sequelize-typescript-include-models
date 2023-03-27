@@ -1,0 +1,24 @@
+{
+  "name": "sequelize-typescript-include-models",
+  "version": "1.0.5",
+  "description": "",
+  "keywords": [
+    "sequelize",
+    "typescript",
+    "orm",
+    "include",
+    "models",
+    "relations",
+    "sequelize-typescript"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.2"
+  }
+}

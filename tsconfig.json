@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es6",
+      "declaration": true,
+      "outDir": "dist",
+      "strict": true
+    },
+    "include": ["index.ts", "models.ts"],
+    "exclude": ["node_modules"]
+  }
+
+  
