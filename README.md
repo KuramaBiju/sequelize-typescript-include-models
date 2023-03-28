@@ -1,6 +1,6 @@
 # Include Models Helper for Sequelize 🚀
 
-[![npm version](https://img.shields.io/npm/v/include-models-helper.svg?style=flat)](https://www.npmjs.com/package/include-models-helper)
+[![npm version](https://img.shields.io/npm/v/include-models-helper.svg?style=flat)](https://github.com/KuramaBiju/sequelize-typescript-include-models)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 **Include Models Helper** es un paquete que simplifica la creación de consultas de inclusión de modelos relacionados en Sequelize y TypeScript. Permite configurar fácilmente las relaciones entre tus modelos y generar automáticamente las cláusulas `include` en tus consultas, haciendo que tu código sea más limpio y fácil de mantener.
