@@ -1,12 +1,13 @@
-let models: { [key: string]: any } = {};
+import { CustomIncludeOptionsArray, ModelsDictionary, } from './types/types';
 
-export function setModels(newModels: { [key: string]: any }) {
+let models: ModelsDictionary = {};
+
+export function setModels(newModels: ModelsDictionary) {
   models = newModels;
 }
 
-
-export function includeModels(relations: string[]): any[] {
-  const include: any[] = [];
+export function includeModels(relations: string[]): CustomIncludeOptionsArray {
+  const include: CustomIncludeOptionsArray = [];
 
   for (const relation of relations) {
     const relationParts = relation.split('.');
@@ -14,7 +15,7 @@ export function includeModels(relations: string[]): any[] {
 
     for (const [index, part] of relationParts.entries()) {
       const [modelPart, wherePart] = part.split(':');
-      const model = models[modelPart]; 
+      const model = models[modelPart];
       if (model) {
         let existingInclude = currentInclude.find((inc) => inc.model === model);
         if (!existingInclude) {
@@ -22,11 +23,11 @@ export function includeModels(relations: string[]): any[] {
           currentInclude.push(existingInclude);
         }
         if (index < relationParts.length - 1) {
-          currentInclude = existingInclude.include;
+          currentInclude = existingInclude.include as CustomIncludeOptionsArray;
         }
       }
     }
   }
 
   return include;
-}
+} 
