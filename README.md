@@ -98,4 +98,3 @@ Esto incluirá solo los comentarios que tengan un estado "aprobado" en el Post.
 ## 📄 Licencia
 
 Este proyecto está licenciado bajo la licencia MIT - consulta el archivo LICENSE para obtener más detalles.
-
